@@ -25,6 +25,10 @@ h2{
     font-weight: bold;
 }
 
+h3{
+    font-size: 16px;
+}
+
 /* Header Part Start */
 
 .headerContainer{
@@ -87,11 +91,13 @@ h2{
 
 
 /* Body Part Start */
+
+/* Image Gallery Section Start */
 .imageGalleryContainer{
     display: flex;
     column-gap: 30px;
     align-items: center;
-    padding: 85px 130px 130px 200px;
+    padding: 85px 140px 130px 200px;
 }
 
 .imageGrid{
@@ -125,3 +131,60 @@ h2{
     font-size: 16px;
     color: var(--gray-color);
 }
+/* Image Gallery Section End */
+
+
+/* Features Section Start */
+.featuresContainer{
+    width: 100%;
+    display: flex;
+    column-gap: 40px;
+    padding: 0 170px 0 200px;
+    
+}
+
+.featuresContent{
+    width: 50%;
+}
+
+.title{
+    border-left: 3px solid var(--orange-color);
+}
+
+.title h2{
+    margin-left: 10px;
+}
+.featuresContent p{
+    margin: 20px auto;
+}
+
+.subContent{
+    margin-top: 10px;
+    padding: 20px 42px 10px 30px ;
+    box-shadow: 0px 3px 12px -8px var(--gray-color);
+}
+.featuresImage{
+    width: 50%;
+}
+.featuresImage img{
+    width: 508px;
+    height: 782px;
+    text-align: right;
+    
+}
+
+.translateContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 130px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    transform: translate(140px, -150px);
+    background-color: var(--orange-color);
+    border-radius: 5px;
+}
+/* Features Section End */
