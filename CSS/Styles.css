@@ -9,18 +9,19 @@
 :root{
     --background-color: rgb(255 144 14/10%);
     --orange-color: #FF900E;
+    --gray-color: #727272;
 }
 
 body{
     font-family: 'Work Sans', sans-serif;
 }
 h1{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 h2{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -79,4 +80,48 @@ h2{
 .bannerImage img{
     width: 100%;
     margin-top: 40px;
+    
+}
+/* Header Banner End */
+/* Header Part End */
+
+
+/* Body Part Start */
+.imageGalleryContainer{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    padding: 85px 130px 130px 200px;
+}
+
+.imageGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    
+}
+
+.imageGrid img{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.imageContent{
+    text-align: left;
+}
+.quickListStyle{
+    color: var(--gray-color);
+    font-weight: normal;
+}
+
+.quickListStyle:last-child{
+    color: var(--orange-color);
+    font-weight: bold;
+}
+
+.imageContent p{
+    margin: 20px auto;
+    font-size: 16px;
+    color: var(--gray-color);
 }
