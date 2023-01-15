@@ -10,6 +10,7 @@
     --background-color: rgb(255 144 14/10%);
     --orange-color: #FF900E;
     --gray-color: #727272;
+    --gray-dark-color: #424242;
 }
 
 body{
@@ -156,12 +157,17 @@ h3{
 }
 .featuresContent p{
     margin: 20px auto;
+    color: var(--gray-color);
 }
 
 .subContent{
     margin-top: 10px;
     padding: 20px 42px 10px 30px ;
     box-shadow: 0px 3px 12px -8px var(--gray-color);
+}
+
+.subContent p{
+    color: var(--gray-color);
 }
 .featuresImage{
     width: 50%;
@@ -188,3 +194,121 @@ h3{
     border-radius: 5px;
 }
 /* Features Section End */
+
+
+/* Some Facts Section Start */
+.someFactsContainer{
+    padding: 0 200px 0 200px;
+}
+
+.someFactsContainer h2{
+    margin-bottom: 20px;
+}
+
+.someFactsContainer p{
+    color: var(--gray-color);
+}
+
+.someFactBoxContainer{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 0 0 0 20px;
+}
+
+.box{
+    width: 198px;
+    height: 198px;
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
+    padding: 40px 0 20px 0;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: rotate(30deg);
+}
+/* Some Facts Section End */
+
+
+/* Blog Section Start */
+
+.blog{
+    padding: 80px 200px 0 200px;
+}
+
+.blog h2{
+    font-size: 30px;
+    text-align: center;
+    color: var(--orange-color);
+}
+
+.blogContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.blogPost{
+    width: 200px;
+
+}
+
+.blogPost img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+.blogPost h3{
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: var(--orange-color);
+    cursor: pointer;
+}
+
+.blogPost h3:hover{
+    color: var(--gray-color);
+}
+
+/* Blog Section End */
+
+
+/* Our Sponsor Section Start */
+.ourSponsorContainer{
+    padding: 100px 200px 0 200px;
+    text-align: center;
+}
+
+.ourSponsorContainer p{
+    color: var(--gray-color);
+    margin: 20px auto 40px auto;
+}
+
+.ourSponsorImageSection{
+    width: 100%;
+    display: flex;
+    column-gap: 120px;
+}
+
+.sponsorImages img{
+    width: 100%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    cursor: pointer;
+}
+/* Our Sponsor Section End */
+
+
+/* Footer Part Start */
+.footerContainer{
+    padding: 20px 0 20px 0;
+    margin: 130px 200px 100px 200px;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--gray-dark-color);
+    border-radius: 5px;
+}
+/* Footer Part End */
