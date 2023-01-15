@@ -105,7 +105,7 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
-    
+ 
 }
 
 .imageGrid img{
@@ -140,8 +140,7 @@ h3{
     width: 100%;
     display: flex;
     column-gap: 40px;
-    padding: 0 170px 0 200px;
-    
+    padding: 0 170px 0 200px; 
 }
 
 .featuresContent{
@@ -175,8 +174,6 @@ h3{
 .featuresImage img{
     width: 508px;
     height: 782px;
-    text-align: right;
-    
 }
 
 .translateContainer{
@@ -312,3 +309,126 @@ h3{
     border-radius: 5px;
 }
 /* Footer Part End */
+
+
+/* Media Query Start */
+@media screen and (max-width: 576px) {
+
+    h1{
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    h2{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .headerContainer{
+        padding: 50px 0 45px 0;
+    }
+
+    .logoMenuContainer{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .bannerContent p{
+        padding: 0 10px;
+    }
+
+    .imageGalleryContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 85px 0 130px 0;
+    }
+
+    .imageGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
+
+    .imageContent{
+        margin-top: 30px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .featuresContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 40px;
+        padding: 0 0 0 0; 
+    }
+    
+    .featuresContent{
+        width: 100%;
+    }
+
+    .title{
+        border-left: 3px solid var(--orange-color);
+        margin: 0 15px;
+    }
+
+    .featuresContent p{
+        padding: 0 15px;
+    }
+    
+    .featuresImage{
+        width: 100%;
+    }
+
+    .featuresImage img{
+        width: 100%;
+    }
+
+    .translateContainer{
+        transform: translate(10px, -150px);
+        background-color: var(--orange-color);
+        border-radius: 5px;
+    }
+
+    .someFactsContainer{
+        padding: 0 0 0 0;
+        text-align: center;
+    }
+
+    .someFactBoxContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin-top: 100px;
+    }
+
+    .blog{
+        padding: 80px 0 0 0;
+    }
+    
+    .blogContainer{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .ourSponsorContainer{
+        padding: 100px 0 0 0;
+        text-align: center;
+    }
+
+    .ourSponsorImageSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 0 50px;
+    }
+
+    .footerContainer{
+        padding: 20px 0 20px 0;
+        margin: 130px 0 100px 0;
+    }
+}
